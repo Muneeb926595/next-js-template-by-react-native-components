@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'foodie';
+  src: url('../assets//fonts//Sooq.ttf') format('ttf')
+}
+
+s
+
+/* base class */
+.icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'foodie';
+  color: inherit;
+  flex-shrink: 0;
+  line-height: 1;
+  max-width: initial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* icons */
+.icon-apple::before {
+  content: "\ea02";
+}
+
+.icon-banana::before {
+  content: "\ea13";
+}
+
+.icon-pear::before {
+  content: "\ea21";
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+}
